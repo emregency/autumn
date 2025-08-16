@@ -47,6 +47,6 @@ WORKDIR /app/server
 CMD ["bun", "start"]
 
 FROM server-build AS workers-prod
-EXPOSE 8080
+EXPOSE 8081
 WORKDIR /app/server
 CMD ["bun", "workers"]
